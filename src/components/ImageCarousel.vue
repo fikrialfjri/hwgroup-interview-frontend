@@ -1,7 +1,7 @@
 <template>
-  <div class="relative overflow-hidden max-w-[60vw] mx-auto rounded-2xl">
+  <div class="relative overflow-hidden max-w-[calc(100vw-40px)] mx-auto rounded-2xl">
     <div class="flex transition-transform duration-500 ease-out" :style="{ transform: `translateX(-${currImage * 100}%)` }">
-      <img v-for="(item, index) in data" :key="index" :src="item.image_url" :alt="item.title" class="min-w-[60vw] max-w-[60vw]" />
+      <Image v-for="(item, index) in data" :key="index" :src="item.image_url" :alt="item.title" classes="min-w-[calc(100vw-40px)] max-w-[calc(100vw-40px)] h-[calc(100vh-110px)]" />
     </div>
 
     <div className="absolute inset-0 flex items-center justify-between p-4">
@@ -13,6 +13,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import Image from "./Image.vue";
 
 const { data } = defineProps(["data"]);
 
