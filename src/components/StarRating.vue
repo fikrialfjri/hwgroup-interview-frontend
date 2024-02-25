@@ -4,7 +4,7 @@
       v-for="star in 5"
       :key="star"
       class="w-4 h-4"
-      :class="{ 'text-yellow-300': star <= rating, 'text-gray-300 dark:text-gray-500': star > rating }"
+      :class="{ 'text-yellow-300': star <= rating, 'text-gray-300': star > rating }"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
