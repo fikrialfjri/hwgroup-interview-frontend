@@ -7,7 +7,5 @@
 </template>
 
 <script setup>
-defineProps({
-  data: Array,
-});
+defineProps(["data"]);
 </script>
