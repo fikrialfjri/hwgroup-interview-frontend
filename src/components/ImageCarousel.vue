@@ -7,8 +7,9 @@
         :src="item.image_url"
         :alt="item.title"
         :rating="item.rating"
+        :title="item.title"
         ratingPosition="center"
-        classes="min-w-[calc(100vw-40px)] max-w-[calc(100vw-40px)] h-[calc(100vh-110px)]"
+        classes="min-w-[calc(100vw-40px)] max-w-[calc(100vw-40px)] h-[calc(100vh-120px)]"
       />
     </div>
 
